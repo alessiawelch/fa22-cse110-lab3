@@ -6,7 +6,7 @@
     <title>10/6 Team Meeting - Minute Meetings</title>
     <link rel="icon" type="image/jpg" href="cselogo.jpg">
   </head>
-  
+  <body>
     <h1>10/6 Group Meeting - Minute Meetings</h1>
     <hr>
     <div class="Agenda"></div>
@@ -25,7 +25,6 @@
     <hr>
 
 
-    <body>
     <main>
     <section id=attendance>
     <div class="Attendance"></div>
@@ -141,7 +140,7 @@
             <input type="text" id="name" name="name"><br>
             <br>
             <label for="date">Today's date:</label>
-            <input type="date" id="date" name="date" value="Today" min="2022-10-01" max="2022-12-31"><br>
+            <input type="date" id="date" name="date" value="2022-10-10" min="2022-10-01" max="2022-12-31"><br>
             <br>
             <label for="present">Choose the applicable option based on your attendace:</label>
             <input list="presents" name="present" id="present">
@@ -152,13 +151,13 @@
             </datalist><br>
             <br>
             <label for="enjoy">Did you enjoy the meeting? Please select the most appropriate option:</label><br>
-            <input type="radio" id="enjoy" name="enjoy" value="Yes">
+            <input type="radio" id="yes" name="enjoy" value="Yes">
             <label for="yes"> I enjoyed this meeting, and I have no complaints.</label><br>
-            <input type="radio" id="enjoy" name="enjoy" value="Maybe">
+            <input type="radio" id="maybe" name="enjoy" value="Maybe">
             <label for="maybe"> I was indifferent towards the meeetings, but I have some complaints</label><br>
-            <input type="radio" id="enjoy" name="enjoy" value="No">
+            <input type="radio" id="no" name="enjoy" value="No">
             <label for="no"> This meeting was unproductive, and I have complaints.</label><br>
-            <input type="radio" id="enjoy" name="enjoy" value="other">
+            <input type="radio" id="other" name="enjoy" value="other">
             <label for="other"> I was not at the meeting.</label><br>
             <br>
             <label for="elaborate">Please elaborate on the previous question:</label><br>
@@ -167,11 +166,11 @@
             </textarea><br>
             <br>
             <label for="available">Which of these times work best for you on Fridays? (select all that apply)</label><br>
-            <input type="checkbox" id="available" name="available" value="morning">
+            <input type="checkbox" id="morning" name="available" value="morning">
             <label for="morning"> Morning: 8:00 AM - 12:00 PM.</label><br>
-            <input type="checkbox" id="available" name="available" value="afternoon">
+            <input type="checkbox" id="afternoon" name="available" value="afternoon">
             <label for="afternoon"> Afternoon: 1:00 PM - 5:00 PM </label><br>
-            <input type="checkbox" id="available" name="available" value="night">
+            <input type="checkbox" id="night" name="available" value="night">
             <label for="night"> Night: 6:00 PM - 10:00 PM</label><br>
             <br>
             <label for="mood">On a scale of 1 to 5 what's your mood today?</label>
