@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>10/6 Team Meeting - Minute Meetings</title>
     <link rel="icon" type="image/jpg" href="cselogo.jpg">
   </head>
@@ -24,8 +24,9 @@
         </nav>
     <hr>
 
-    <main>
+
     <body>
+    <main>
     <section id=attendance>
     <div class="Attendance"></div>
         <header>
@@ -38,12 +39,12 @@
         <label for="person2"> Jane Doe</label><br>
         <input type="checkbox" id="person3" name="person3" value="John Smith">
         <label for="person3"> John Smith</label><br>
-        <input type="checkbox" id="person1" name="person1" value="Ryan Johnson">
-        <label for="person1"> Ryan Johnson</label><br>
-        <input type="checkbox" id="person2" name="person2" value="Kim Jones">
-        <label for="person2"> Kim Jones</label><br>
-        <input type="checkbox" id="person3" name="person3" value="Bob Williams">
-        <label for="person3"> Bob Williams</label><br>
+        <input type="checkbox" id="person4" name="person4" value="Ryan Johnson">
+        <label for="person4"> Ryan Johnson</label><br>
+        <input type="checkbox" id="person5" name="person5" value="Kim Jones">
+        <label for="person5"> Kim Jones</label><br>
+        <input type="checkbox" id="person6" name="person6" value="Bob Williams">
+        <label for="person6"> Bob Williams</label><br>
         <hr>
     </section>
 
@@ -101,7 +102,7 @@
     <div class="Open Forum"></div>
         <header>
         <h2>Agenda Item #5: Open Forum</h2>
-        <header>
+        </header>
         <h3>Team Leader Announcment</h3>
         <details>
         <summary>Reminders:</summary>
@@ -114,8 +115,9 @@
         <footer>
         <p>No other topics were discussed in Open Forum.</p>
         </footer>
+        <hr>
     </section>   
-    <hr>
+    
     <section id="ASMR">
         <div class="ARMR"></div>
             <h2>Audio and Visuals</h2>
@@ -132,7 +134,7 @@
             </audio>
         </section>
     <hr>
-    <form>
+    <form id="moodform">
         <fieldset>
             <legend>Feedback Form:</legend>
             <label for="name">Enter your full name:</label><br>
@@ -150,13 +152,13 @@
             </datalist><br>
             <br>
             <label for="enjoy">Did you enjoy the meeting? Please select the most appropriate option:</label><br>
-            <input type="radio" id="yes" name="enjoy" value="Yes">
+            <input type="radio" id="enjoy" name="enjoy" value="Yes">
             <label for="yes"> I enjoyed this meeting, and I have no complaints.</label><br>
-            <input type="radio" id="maybe" name="enjoy" value="Maybe">
+            <input type="radio" id="enjoy" name="enjoy" value="Maybe">
             <label for="maybe"> I was indifferent towards the meeetings, but I have some complaints</label><br>
-            <input type="radio" id="no" name="enjoy" value="No">
+            <input type="radio" id="enjoy" name="enjoy" value="No">
             <label for="no"> This meeting was unproductive, and I have complaints.</label><br>
-            <input type="radio" id="other" name="enjoy" value="other">
+            <input type="radio" id="enjoy" name="enjoy" value="other">
             <label for="other"> I was not at the meeting.</label><br>
             <br>
             <label for="elaborate">Please elaborate on the previous question:</label><br>
@@ -165,11 +167,11 @@
             </textarea><br>
             <br>
             <label for="available">Which of these times work best for you on Fridays? (select all that apply)</label><br>
-            <input type="checkbox" id="morning" name="morning" value="morning">
+            <input type="checkbox" id="available" name="available" value="morning">
             <label for="morning"> Morning: 8:00 AM - 12:00 PM.</label><br>
-            <input type="checkbox" id="afternoon" name="afternoon" value="afternoon">
+            <input type="checkbox" id="available" name="available" value="afternoon">
             <label for="afternoon"> Afternoon: 1:00 PM - 5:00 PM </label><br>
-            <input type="checkbox" id="night" name="night" value="night">
+            <input type="checkbox" id="available" name="available" value="night">
             <label for="night"> Night: 6:00 PM - 10:00 PM</label><br>
             <br>
             <label for="mood">On a scale of 1 to 5 what's your mood today?</label>
@@ -184,7 +186,6 @@
             <button type="button">Submit</button>
         </fieldset>
       </form>
-
+    </main>
   </body>
-  </main>
 </html>
