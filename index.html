@@ -5,33 +5,38 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>10/6 Team Meeting - Minute Meetings</title>
     <link rel="icon" type="image/jpg" href="cselogo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   </head>
   <body>
     <h1>10/6 Group Meeting - Minute Meetings</h1>
     <hr>
-    <div class="Agenda"></div>
+    <div class="Agenda">
         <header>
         <h2>Today's Agenda</h2>
         </header>
         <nav>
         <ol>
-            <li><a href="#attendance">Attendance</a></li>
-            <li><a href="#unfinished">Go Over Last Meeting Minutes & Unfinished Buisness</a></li>
-            <li><a href="#check">Check-Ins with Group</a></li>
-            <li><a href="#brainstorm">Brainstorming and Role Assignment</a></li>
-            <li><a href="#forum">Open Forum</a></li>
+            <li><a href="#attendance"target = "_blank">Attendance</a></li>
+            <li><a href="#unfinished"target = "_blank">Go Over Last Meeting Minutes & Unfinished Buisness</a></li>
+            <li><a href="#check"target = "_blank">Check-Ins with Group</a></li>
+            <li><a href="#brainstorm"target = "_blank">Brainstorming and Role Assignment</a></li>
+            <li><a href="#forum"target = "_blank">Open Forum</a></li>
         </ol>
         </nav>
+    </div>
     <hr>
 
 
     <main>
     <section id=attendance>
-    <div class="Attendance"></div>
+    <div class="Attendance">
         <header>
         <h2>Agenda Item #1: Attendance</h2>
         </header>
-        <p>To mark attendance, click on the attendee's name below:</p>
+        <p class="Attendance">To mark attendance, click on the attendee's name below:</p>
         <input type="checkbox" id="person1" name="person1" value="Alessia Welch">
         <label for="person1"> Alessia Welch</label><br>
         <input type="checkbox" id="person2" name="person2" value="Jane Doe">
@@ -45,10 +50,11 @@
         <input type="checkbox" id="person6" name="person6" value="Bob Williams">
         <label for="person6"> Bob Williams</label><br>
         <hr>
+    </div>
     </section>
 
     <section id="unfinished">
-    <div class="Unfinished Buisness"></div>
+    <div class="UnfinishedBuisness">
         <header>
         <h2>Agenda Item #2: Last Meeting Minutes Approval and Unfinshed Buisness</h2>
         </header>
@@ -57,10 +63,11 @@
             <h3>Unfinshed Buisness</h3>
             <p>There was no Unfinished Buisness</p>
             <hr>
+    </div>
     </section>
     
     <section id="check">
-    <div class="Check-Ins"></div>
+    <div class="Check-Ins">
         <header>
         <h2>Agenda Item #3: Check-Ins with Group</h2>
         </header>
@@ -73,10 +80,11 @@
             <li><b>Bob</b> - Worked on Background with Jane</li>
         </ul>
         <hr>
+    </div>
     </section>
 
     <section id="brainstorm">
-    <div class="Brainstorming"></div>
+    <div class="Brainstorming">
         <header>
         <h2>Agenda Item #4: Brainstorming and Role Assignment</h2>
         </header>
@@ -95,10 +103,11 @@
             <li>Bob - Test Login</li>
         </ul>
         <hr>
+    </div>
     </section>
 
     <section id="forum">
-    <div class="Open Forum"></div>
+    <div class="OpenForum">
         <header>
         <h2>Agenda Item #5: Open Forum</h2>
         </header>
@@ -115,24 +124,24 @@
         <p>No other topics were discussed in Open Forum.</p>
         </footer>
         <hr>
+    </div>
     </section>   
     
     <section id="ASMR">
-        <div class="ARMR"></div>
-            <h2>Audio and Visuals</h2>
-            <h3>Image</h3>
-            <img src="cselogo.jpg" alt="cse logo" width="200" height="200">
-            <h3>Video</h3>
-            <video width="320" height="240" controls>
+        <h2>Audio and Visuals</h2>
+        <div class="flex-container">
+            <div class="flex-item"><img src="cselogo.jpg" alt="cse logo" width="200" height="200"></div>
+            <div class="flex-item"><video width="320" height="240" controls>
                 <source src="30_seconds.mp4" type="video/mp4">
-            </video>
-            <h3>Audio</h3>
-            <audio controls>
+            </video></div>
+            <div class="flex-item"><audio controls>
                 <source src="audio1.mp3" type="audio/mp3">
                 Your browser does not support the audio tag.
-            </audio>
+            </audio></div>
+        </div>
         </section>
     <hr>
+    <br>
     <form id="moodform">
         <fieldset>
             <legend>Feedback Form:</legend>
@@ -185,6 +194,21 @@
             <button type="button">Submit</button>
         </fieldset>
       </form>
+      <br>
+      <br>
+      <p>Click on everyone's name to go to their github page</p>
+      <p>(Links are a work in progress)</p>
+      <div class="grid-container">
+        <div class="grid-header">Meet the Team</div>
+        <div class="grid-item">Alessia Welch</div>
+        <div class="grid-item">Jane Doe</div>
+        <div class="grid-item">John Smith</div>
+        <div class="grid-item">Ryan Johnson</div>
+        <div class="grid-item">Kim Jones</div>  
+        <div class="grid-item">Bob Williams</div>
+      </div>
+      </div>
+
     </main>
   </body>
 </html>
