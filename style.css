@@ -1,0 +1,182 @@
+/*media - change font size if needed*/
+@media only screen and (min-width: 600px) {
+    body{
+        font-size: 12pt;
+    }
+
+
+body {
+    background-color: rgb(185, 236, 255);
+    margin-top: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 3em;
+    }
+}
+
+/*element selector - change h1 info*/
+h1 {
+  color: navy;
+  text-align: center;
+  position: static;
+  text-decoration: underline;
+}
+
+/*class - change section background*/
+.Attendance {
+    background-color: #CCCCFF;
+}
+
+/*class - change section background*/
+.UnfinishedBuisness {
+    background-color: #CCCCFF;
+}
+
+/*class - change section background*/
+.Check-Ins {
+    background-color: #CCCCFF;
+}
+
+/*class - change section background*/
+.Brainstorming {
+    background-color: #CCCCFF;
+}
+
+/*class - change section background*/
+.OpenForum {
+    background-color: #CCCCFF;
+}
+
+
+/*id selector - change form color*/
+#moodform {
+    color: hsl(205, 100%, 50%);
+}
+
+/*universal selector - change font*/
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+/*attribute selector [attribute=] // highlight agenda*/
+a[target = "_blank"]{
+    background-color: lavender;
+}
+
+/*Psuedo-Class Selector - hovering over link*/
+a:hover {
+  color: hotpink;
+}
+  
+/*Psuedo-Class Selector - selected link*/
+a:active {
+  color: blue;
+}
+
+/*selector list - change background color of headers*/
+h2, h3 {
+    background-color: purple;
+}
+
+/*descendant combinator - change p of open forum*/
+.OpenForum p {
+    color: purple;
+}
+
+/*child combinator - change agenda number to purple*/ 
+nav > ol {
+    color: purple;
+}
+
+/*general sibling combinator - reminders are red*/
+summary ~ ul {
+    color: red;
+}
+/*adjacent sibling combinator - after br add green text*/ 
+br + p{
+    color: green; 
+}
+/*combining two selectors element.class - change color name*/ 
+p.Attendance {
+    color: blue;
+}
+
+
+/*Flexbox*/
+.flex-container {
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(46, 101, 212);
+}
+
+/*Flexbox Items*/
+.flex-item {
+    flex: 5;
+    align-self: center;
+    margin: auto;
+    position: relative;
+    height: auto;
+    width: auto;
+    max-width: max-content;
+    min-width: none;
+
+}
+
+/*Grid*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main";
+    column-gap: 10px;
+    row-gap: 15px;
+    background-color: #2196F3;
+    padding: 10px;
+    border-style: dotted;
+    border-color: black;
+    border-radius: 2.5em;
+    border-width: 5px;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+
+  }
+  
+/*Grid Header*/
+.grid-header{
+    display: block;
+    grid-column: 1 / span 3;
+    background-color: rgb(251, 120, 188);
+    border: 5px solid rgba(0, 0, 0);
+    border-radius: 20%;
+    padding: 15px 15px 15px 15px;
+    font-size: 50px;
+    text-align: center;
+    margin: 1cm 1cm 1cm 1cm;
+}
+
+/*Grid Items*/
+.grid-item {
+    display: inline;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10%;
+    padding: 15px 15px 15px 15px;
+    font-size: 40px;
+    text-align: center;
+    margin: 1cm 1cm 1cm 1cm;
+
+}
+
+
